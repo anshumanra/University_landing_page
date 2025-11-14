@@ -1,0 +1,19 @@
+{
+  "university": "Chandigarh University (CU)",
+  "location": "Mohali, Punjab",
+  "overview": "Chandigarh University (CU) is NAAC A+ accredited and offers industry-focused programs with excellent placements.",
+  "courses": [
+    {"name": "B.Tech", "duration": "4 years"},
+    {"name": "MBA", "duration": "2 years"},
+    {"name": "BCA", "duration": "3 years"}
+  ],
+  "placements": {
+    "highest_package": "₹54.75 LPA (India)",
+    "international_highest": "₹1.7 Cr",
+    "total_companies": "1100+"
+  },
+  "fees": {
+    "B.Tech": { "min_inr": 180000, "max_inr": 450000 },
+    "MBA": { "min_inr": 120000, "max_inr": 400000 }
+  }
+}

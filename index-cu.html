@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chandigarh University - Landing Page</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="theme-cu">
+
+  <header class="site-header">
+    <img src="assets/logos/cu-logo.png" class="uni-logo" alt="CU Logo">
+
+    <h1 id="uni-name">Loading...</h1>
+    <p id="uni-location"></p>
+
+    <a href="assets/brochures/cu-brochure.pdf" class="btn brochure-btn" download>
+      Download Brochure
+    </a>
+  </header>
+
+  <main class="container">
+
+    <section class="overview card">
+      <h2>Overview</h2>
+      <p id="overview-text"></p>
+    </section>
+
+    <section class="courses card">
+      <h2>Courses</h2>
+      <ul id="courses-list"></ul>
+      <button class="btn" id="fees-btn">Check Course-wise Fees</button>
+    </section>
+
+    <section class="placements card">
+      <h2>Placements</h2>
+      <div id="placements"></div>
+    </section>
+
+    <section class="lead-card card">
+      <h2>Apply Now</h2>
+      <form id="lead-form" novalidate>
+
+        <label>Full Name
+          <input name="fullName" required>
+        </label>
+
+        <label>Email
+          <input name="email" type="email" required>
+        </label>
+
+        <label>Phone Number
+          <input name="phone" maxlength="10" inputmode="numeric" required>
+        </label>
+
+        <label>State
+          <select name="state" required>
+            <option value="">Select</option>
+            <option>Punjab</option>
+            <option>Haryana</option>
+            <option>UP</option>
+            <option>Delhi NCR</option>
+          </select>
+        </label>
+
+        <label>Course Interested
+          <select name="course" id="course-select" required>
+            <option value="">Select</option>
+          </select>
+        </label>
+
+        <label>Intake Year
+          <select name="intake" required>
+            <option>2025</option>
+            <option>2026</option>
+          </select>
+        </label>
+
+        <label class="consent">
+          <input type="checkbox" name="consent" required>
+          I agree to be contacted by Chandigarh University.
+        </label>
+
+        <input type="hidden" name="university" value="Chandigarh University">
+
+        <button class="btn" type="submit">Apply Now</button>
+        <div id="form-msg"></div>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">&times;</button>
+      <h3>Course-wise Fees</h3>
+      <div id="fees-content"></div>
+    </div>
+  </div>
+
+  <script>
+    window.PIPEDREAM_ENDPOINT = "https://eot2syr5kiupuao.m.pipedream.net";
+    window.API_BASE = "api/cu-data.json";
+    window.UNI_KEY = "CU";
+  </script>
+  <script src="js/app.js"></script>
+
+</body>
+</html>

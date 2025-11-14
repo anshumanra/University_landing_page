@@ -1,0 +1,20 @@
+{
+  "university": "Lovely Professional University (LPU)",
+  "location": "Punjab, India",
+  "overview": "LPU is one of India's leading private universities offering top-quality education, modern infrastructure and outstanding placements.",
+  "courses": [
+    {"name": "B.Tech", "duration": "4 years"},
+    {"name": "MBA", "duration": "2 years"},
+    {"name": "BBA", "duration": "3 years"}
+  ],
+  "placements": {
+    "highest_package": "₹2.5 Cr",
+    "average_package": "₹10.23 LPA",
+    "total_companies": "2225+"
+  },
+  "fees": {
+    "B.Tech": { "min_inr": 250000, "max_inr": 400000 },
+    "MBA": { "min_inr": 150000, "max_inr": 350000 },
+    "BBA": { "min_inr": 90000, "max_inr": 200000 }
+  }
+}
